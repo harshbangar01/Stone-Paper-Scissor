@@ -1,40 +1,20 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Rock Paper Scissors Game</title>
-    <link rel="icon" href="./OG logo.png" type="image/x-icon">
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <h1>Rock Paper Scissors</h1>
-    <div class="choices">
-      <div class="choice" id="rock">
-        <img src="https://rock-paper-scissors-lilac-alpha.vercel.app/static/media/rock.png" />
-      </div>
-      <div class="choice" id="paper">
-        <img src="https://rock-paper-scissors-lilac-alpha.vercel.app/static/media/paper.png" />
-      </div>
-      <div class="choice" id="scissors">
-        <img src="https://e7.pngegg.com/pngimages/522/764/png-clipart-lizard-spock-rock-paper-scissors-vulcan-salute-others-purple-blue-thumbnail.png" />
-      </div>
-    </div>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Rock Paper Scissors</title> 
+        <link rel="stylesheet" href="style.css">
+        <script src="script.js"></script>
+    </head>
 
-    <div class="score-board">
-      <div class="score">
-        <p id="user-score">0</p>
-        <p>You</p>
-      </div>
-      <div class="score">
-        <p id="comp-score">0</p>
-        <p>Comp</p>
-      </div>
-    </div>
-
-    <div class="msg-container">
-      <button class="glow-button">Play your move</button>
-    </div>
-    <script src="script.js"></script>
-  </body>
+    <body>
+        <h1 id="opponent-score">0</h1>
+        <img id="opponent-choice">
+        <br>
+        <img id="your-choice">
+        <div id="choices">
+        </div>
+        <h1 id="your-score">0</h1>
+    </body>
 </html>
