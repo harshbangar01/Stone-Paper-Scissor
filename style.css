@@ -1,31 +1,55 @@
+/* Base styles */
 body {
     font-family: Arial, Helvetica, sans-serif;
     text-align: center;
+    margin: 0;
+    padding: 20px;
+    box-sizing: border-box;
 }
 
-#opponent-choice {
-    width: 240px;
-    height: 240px;
-    /* background-color: cyan; */
-    margin-top: 10px;
+h1 {
+    font-size: 2rem;
+    margin: 10px 0;
 }
 
+/* Images adapt to screen size */
+#opponent-choice,
 #your-choice {
-    width: 240px;
-    height: 240px;
-    /* background-color: yellow; */
-    margin-top: 10px; 
+    width: 40vw;
+    max-width: 240px;
+    height: auto;
+    margin-top: 10px;
 }
 
 #choices {
-    width: 240px;
-    height: 80px;
-    /* background-color: green; */
-    margin: 0 auto;
-    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: wrap;
+    margin: 20px auto;
 }
 
 #choices img {
-    width: 80px;
-    height: 80px;
+    width: 20vw;
+    max-width: 80px;
+    height: auto;
+    cursor: pointer;
+}
+
+/* Responsive adjustments */
+@media (max-width: 600px) {
+    #opponent-choice,
+    #your-choice {
+        width: 60vw;
+        max-width: 180px;
+    }
+
+    #choices img {
+        width: 24vw;
+        max-width: 70px;
+    }
+
+    h1 {
+        font-size: 1.5rem;
+    }
 }
